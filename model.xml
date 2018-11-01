@@ -13,7 +13,7 @@
             <and mandatory="true" name="Campeopnatos">
                 <and name="Copa">
                     <feature name="Grupo"/>
-                    <feature name="MataMata"/>
+                    <feature name="Mata_Mata"/>
                 </and>
                 <feature name="PontCorr"/>
             </and>
