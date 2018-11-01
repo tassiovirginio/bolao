@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<configuration>
+    <feature automatic="selected" name="SISBOLAO"/>
+    <feature automatic="selected" name="Base"/>
+    <feature automatic="selected" name="Usuarios"/>
+    <feature automatic="selected" name="GrupoUsuario"/>
+    <feature automatic="selected" name="GUI"/>
+    <feature automatic="selected" name="Database"/>
+    <feature automatic="selected" name="Campeopnatos"/>
+    <feature automatic="selected" name="Bolao"/>
+    <feature automatic="selected" name="Apostas"/>
+    <feature automatic="selected" name="Ganhador"/>
+    <feature automatic="selected" name="Placar"/>
+    <feature automatic="selected" name="Resultados"/>
+    <feature automatic="selected" name="Ranking"/>
+</configuration>

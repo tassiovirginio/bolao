@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<featureModel>
+    <properties/>
+    <struct>
+        <and abstract="true" mandatory="true" name="SISBOLAO">
+            <and mandatory="true" name="Base">
+                <and mandatory="true" name="Usuarios">
+                    <feature mandatory="true" name="GrupoUsuario"/>
+                </and>
+                <feature mandatory="true" name="GUI"/>
+                <feature mandatory="true" name="Database"/>
+            </and>
+            <and mandatory="true" name="Campeopnatos">
+                <and name="Copa">
+                    <feature name="Grupo"/>
+                    <feature name="Mata-Mata"/>
+                </and>
+                <feature name="PontCorr"/>
+            </and>
+            <and mandatory="true" name="Bolao">
+                <and mandatory="true" name="Apostas">
+                    <and mandatory="true" name="Ganhador">
+                        <feature name="PorTime"/>
+                        <feature name="PorPlacar"/>
+                    </and>
+                    <feature mandatory="true" name="Placar"/>
+                </and>
+                <feature mandatory="true" name="Resultados"/>
+                <feature name="RankingEsp"/>
+                <feature name="Integrantes"/>
+                <and name="Premiacao">
+                    <feature name="Online"/>
+                    <feature name="FOffline"/>
+                </and>
+            </and>
+            <feature mandatory="true" name="Ranking"/>
+            <and name="Financeiro">
+                <feature name="Aporte"/>
+            </and>
+        </and>
+    </struct>
+    <constraints>
+        <rule>
+            <imp>
+                <var>Online</var>
+                <var>Financeiro</var>
+            </imp>
+        </rule>
+    </constraints>
+    <calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+    <comments/>
+    <featureOrder userDefined="false"/>
+</featureModel>
