@@ -13,7 +13,7 @@
             <and mandatory="true" name="Campeopnatos">
                 <and name="Copa">
                     <feature name="Grupo"/>
-                    <feature name="Mata-Mata"/>
+                    <feature name="Mata_Mata"/>
                 </and>
                 <feature name="PontCorr"/>
             </and>
@@ -21,7 +21,9 @@
                 <and mandatory="true" name="Apostas">
                     <and mandatory="true" name="Ganhador">
                         <feature name="PorTime"/>
-                        <feature name="PorPlacar"/>
+                        <and name="PorPlacar">
+                            <feature name="Teste"/>
+                        </and>
                     </and>
                     <feature mandatory="true" name="Placar"/>
                 </and>
